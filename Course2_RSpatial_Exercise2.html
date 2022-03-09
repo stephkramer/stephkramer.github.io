@@ -220,7 +220,7 @@
     </div>
     <div id="postamble" data-toggle="wy-nav-shift" class="status">
                   <p class="author"><span class="glyphicon glyphicon-user"></span> Stephanie Kramer-Schadt &amp; Cédric Scherer</p>
-                        <p class="date"><span class="glyphicon glyphicon-calendar"></span> Last Update March 3, 2022</p>
+                        <p class="date"><span class="glyphicon glyphicon-calendar"></span> Last Update March 9, 2022</p>
           </div>
    </div>
      
@@ -284,7 +284,7 @@ code {
 <li>Store the simple feature data <code>sf_water</code> in a local object. The data set is also provided by the <code>{d6berlin}</code> package.</li>
 </ol></li>
 <li><ol start="2" style="list-style-type: lower-alpha">
-<li>To easy the handling of the data set, filter for large water bodies only (area &gt;= 100 m^2).</li>
+<li>To ease the handling of the data set, filter for large water bodies only (area &gt;= 100000 m^2).</li>
 </ol></li>
 <li><ol start="3" style="list-style-type: lower-alpha">
 <li>Calculate the distance between the wild boar data and the water bodies and add the information as a new column to your wild boar data set. Afterwards, convert the unit to km.</li>
@@ -293,7 +293,7 @@ code {
 <li>Calculate the mean of all estimated distances.</li>
 </ol></li>
 </ul>
-<p>Hint: To calculate the minimum distance per wild boar observation, you need to “union” all polygons into a single multipolygon first! (otherwise you get all distances from all observations to every single polygon!)</p>
+<p>Hint: To calculate the minimum distance per wild boar observation, you need to “union” all polygon features into a single multipolygon first! (otherwise you get all distances from all observations to every single polygon feature!)</p>
 <hr />
 </div>
 <div id="exercise-2.3" class="section level2">
@@ -322,28 +322,27 @@ code {
 Session Info
 </summary>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()</span></code></pre></div>
-<pre><code>## [1] &quot;2022-03-03 13:16:02 CET&quot;</code></pre>
+<pre><code>## [1] &quot;2022-03-09 23:30:48 CET&quot;</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
 <pre><code>## R version 4.1.2 (2021-11-01)
-## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Platform: i386-w64-mingw32/i386 (32-bit)
 ## Running under: Windows 10 x64 (build 19043)
 ## 
 ## Matrix products: default
 ## 
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
-## [3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
-## [5] LC_TIME=C                      
-## system code page: 65001
+## [1] LC_COLLATE=English_Germany.1252  LC_CTYPE=English_Germany.1252   
+## [3] LC_MONETARY=English_Germany.1252 LC_NUMERIC=C                    
+## [5] LC_TIME=C                       
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] bookdown_0.24    digest_0.6.29    R6_2.5.1         jsonlite_1.7.2  
-##  [5] magrittr_2.0.1   evaluate_0.14    rmdformats_1.0.3 stringi_1.7.5   
+##  [1] bookdown_0.24    digest_0.6.29    R6_2.5.1         jsonlite_1.7.3  
+##  [5] magrittr_2.0.1   evaluate_0.14    rmdformats_1.0.3 stringi_1.7.6   
 ##  [9] rlang_0.4.12     jquerylib_0.1.4  bslib_0.3.1      rmarkdown_2.11  
-## [13] tools_4.1.2      stringr_1.4.0    xfun_0.27        yaml_2.2.1      
+## [13] tools_4.1.2      stringr_1.4.0    xfun_0.28        yaml_2.2.1      
 ## [17] fastmap_1.1.0    compiler_4.1.2   htmltools_0.5.2  knitr_1.36      
 ## [21] sass_0.4.0</code></pre>
 </details>
